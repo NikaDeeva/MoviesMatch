@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks programme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="header__nav">
+                <li class="header__item">
+                    <a href="#" class="header__link">Find a movie</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Favourites</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Random movie</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="header__title">Movie Match</h1>
+        <span class="header__describe">Find a perfect movie for you</span>
+        <div class="header__btn-wrap">
+            <button class="header__btn">Let`s Start</button>
+        </div>
+    </header>
+    <main>
+        <section class="find container">
+            <h2 class="find__title">What kind of movie would you watch now?</h2>
+            <form class="find__form">
+                <label class="find__label">
+                    <select class="find__select" id="genre">
+                        <option value="comedy">Comedy</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="horror">Horror</option>
+                        <option value="drama">Drama</option>
+                        <option value="sciFi">Scientific Fiction</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="action">Action</option>
+                        <option value="romance">Romance</option>
+                    </select>
+                </label>
+                <label class="find__label">
+                    <select class="find__select" id="mood">
+                        <option value="light">Light</option>
+                        <option value="serious">Serious</option>
+                        <option value="exciting">Exciting</option>
+                        <option value="scary">Scary</option>
+                        <option value="sentimental">Sentimental</option>
+                        <option value="filosofic">Filosofic</option>
+                    </select>
+                </label>
+                <label class="find__label">
+                    <select class="find__select" id="duration">
+                        <option value="long">Long</option>
+                        <option value="medium">Medium</option>
+                        <option value="short">Short</option>
+                    </select>
+                </label>
+            </form>
+            <ul class="find__list"></ul>
+        </section>
+        <section class="fav container">
+            <h2 class="fav__title">Your favourites</h2>
+            <ul class="fav__list"></ul>
+        </section>
+        <section class="random container">
+            <h2 class="random__title">Don`t know what to watch?</h2>
+            <div class="random__btn-wrap">
+                <button class="random__btn">Generate a random movie</button>
+            </div>
+            <div class="random__movie"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Movie Match can help you with choosing a movie for the perfect entertainment</p>
+        <a href="mailto:deeva.dasha1409@gmail.com" class="footer__mail">
+            <svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg>
+            deeva.dasha1409@gmail.com
+        </a>
+    </footer>
+</body>
+</html>
