@@ -3,7 +3,7 @@ body{
     padding: 0;
     margin: 0;
     font-size: 14px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 *,
 ::after,
@@ -42,4 +42,61 @@ img{
     .container{ 
         width: 1200px; 
     } 
+}
+.header{
+    background-color: #b83636;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    &__nav{
+     padding-bottom: 20px;
+     border-bottom: 1px solid #360000;
+     display: flex;
+     justify-content: space-around;
+    }
+    &__subtitle{
+        color: #360000;
+        font-weight: 700;
+       text-shadow: rgba(0, 0, 0, 0.2);
+       cursor: pointer;
+    }
+    &__link{
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__title{
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+    &__describe{
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        padding-bottom: 30px;
+    }
+    &__btn-wrap{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn{
+        cursor: pointer;
+        border: 1px solid #360000;
+        background-color: #360000;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 250ms ease-in-out;
+        border-radius: 5px;
+        &:hover{
+            background-color: #fff;
+            color: #360000;
+        }
+    }
 }
