@@ -20,9 +20,9 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="header__nav">
             <a class="header__subtitle" href="./index.html">MovieMatch</a>
-            <ul class="header__nav">
+            <ul class="header__list">
                 <li class="header__item">
                     <a href="#find" class="header__link">Find a movie</a>
                 </li>
@@ -45,6 +45,7 @@
             <h2 class="find__title">What kind of movie would you watch now?</h2>
             <form class="find__form">
                 <label class="find__label">
+                    Genre
                     <select class="find__select" id="genre">
                         <option value="comedy">Comedy</option>
                         <option value="thriller">Thriller</option>
@@ -57,6 +58,7 @@
                     </select>
                 </label>
                 <label class="find__label">
+                    Mood
                     <select class="find__select" id="mood">
                         <option value="light">Light</option>
                         <option value="serious">Serious</option>
@@ -67,12 +69,16 @@
                     </select>
                 </label>
                 <label class="find__label">
+                    Duration
                     <select class="find__select" id="duration">
                         <option value="long">Long</option>
                         <option value="medium">Medium</option>
                         <option value="short">Short</option>
                     </select>
                 </label>
+                <div class="find__btn-wrap">
+                    <button class="find__btn" type="submit" id="findBtn">Find</button>
+                </div>
             </form>
             <ul class="find__list"></ul>
         </section>
@@ -82,10 +88,10 @@
         </section>
         <section class="random container" id="random">
             <h2 class="random__title">Don`t know what to watch?</h2>
+             <div class="random__movie"></div>
             <div class="random__btn-wrap">
                 <button class="random__btn">Generate a random movie</button>
             </div>
-            <div class="random__movie"></div>
         </section>
     </main>
     <footer class="footer">
