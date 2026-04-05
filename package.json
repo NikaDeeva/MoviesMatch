@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.98.0"
+  },
+  "dependencies": {
+    "flask": "^0.2.10"
   }
 }
