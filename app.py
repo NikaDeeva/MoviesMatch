@@ -3,6 +3,7 @@ from random import randint
 from storage import load_movies, load_fav, save_to_fav
 from models import Movie
 
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -28,7 +29,7 @@ def add_to_fav():
 
 @app.route("/get_movies", methods=["GET"])
 def get_movies():
-    movies = load_movies()
+    movies = load_movies()  # завантажуємо movies_with_posters.json
     return jsonify([movie.__dict__ for movie in movies])
 
 @app.route("/get_fav", methods=["GET"])

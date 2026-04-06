@@ -164,7 +164,7 @@ img {
   cursor: pointer;
   transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
-.find__btn:hover, .find__btn:focus {
+.find__btn:hover {
   background-color: transparent;
   color: #360000;
 }
@@ -190,6 +190,26 @@ img {
   font-weight: 800;
   padding-bottom: 30px;
 }
+.random__movie-added {
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 30px 0px;
+  max-width: 400px;
+}
+.random__name {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.random__year-wrap, .random__genre-wrap, .random__rating-wrap {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 0px;
+}
+.random__year, .random__genre, .random__rating {
+  font-weight: 400;
+}
 .random__btn-wrap {
   display: flex;
   justify-content: center;
@@ -206,7 +226,7 @@ img {
   cursor: pointer;
   transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
-.random__btn:hover, .random__btn:focus {
+.random__btn:hover {
   background-color: transparent;
   color: #b83636;
 }
