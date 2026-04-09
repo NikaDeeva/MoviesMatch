@@ -1,5 +1,4 @@
 from dataclasses import dataclass, field
-# from random import randint
 
 @dataclass
 class Movie:
@@ -10,4 +9,4 @@ class Movie:
     mood: str
     rating: int
     id: int
-    
+    poster: str = ""  

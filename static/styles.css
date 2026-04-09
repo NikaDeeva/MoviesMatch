@@ -107,11 +107,11 @@ img {
   padding: 15px 30px;
   font-size: 16px;
   font-weight: 400;
-  transition: 250ms ease-in-out;
+  transition: 500ms ease-in-out;
   border-radius: 5px;
 }
 .header__btn:hover {
-  background-color: #fff;
+  background-color: transparent;
   color: #360000;
 }
 
@@ -153,7 +153,52 @@ img {
   font-weight: 400;
   color: #fff;
 }
+.find__list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.find__item {
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+  max-width: 300px;
+  background-color: #b83636;
+}
+.find__name {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.find__year-wrap, .find__genre-wrap, .find__rating-wrap {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 0px;
+}
+.find__year, .find__genre, .find__rating {
+  font-weight: 400;
+}
 .find__btn {
+  border: 1px solid #360000;
+  border-radius: 5px;
+  background-color: #360000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+}
+.find__btn:hover {
+  background-color: transparent;
+  color: #360000;
+}
+.find .add__btn {
+  margin-top: 10px;
   border: 1px solid #360000;
   border-radius: 5px;
   background-color: #360000;
@@ -164,7 +209,7 @@ img {
   cursor: pointer;
   transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
-.find__btn:hover {
+.find .add__btn:hover {
   background-color: transparent;
   color: #360000;
 }
@@ -195,6 +240,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin: 30px 0px;
   max-width: 400px;
+  background-color: #b83636;
 }
 .random__name {
   font-size: 16px;
@@ -229,6 +275,22 @@ img {
 .random__btn:hover {
   background-color: transparent;
   color: #b83636;
+}
+.random .add__btn {
+  margin-top: 10px;
+  border: 1px solid #360000;
+  border-radius: 5px;
+  background-color: #360000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+}
+.random .add__btn:hover {
+  background-color: transparent;
+  color: #360000;
 }
 
 .footer {

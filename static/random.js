@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="random__year-wrap">Year: <span class="random__year">${year}</span></p>
             <p class="random__genre-wrap">Genre: <span class="random__genre">${genre.join(", ")}</span></p>
             <p class="random__rating-wrap">Rating: <span class="random__rating">${rating}</span></p>
+            <div class="add__btn-wrap">
+    <button class="add__btn" type="button" id="addToFavs">Add to favourites</button>
+</div>
             
         `;
     }

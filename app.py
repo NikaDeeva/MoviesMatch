@@ -20,7 +20,8 @@ def add_to_fav():
     genre=list(data["genre"]),
     mood=data["mood"],
     rating=int(data["rating"]),
-    id=int(data["id"])
+    id=int(data["id"]),
+    poster=data["poster"]
 )
     fav = load_fav()
     fav.append(fav_movie)
