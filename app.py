@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/save_to_fav", methods=["POST"])
+@app.route('/save_to_fav/<int:movie_id>', methods=["POST"])
 def add_to_fav():
     data = request.get_json()
     fav_movie = Movie(
