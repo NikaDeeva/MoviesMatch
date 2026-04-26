@@ -1,1 +1,42 @@
-[]
+[
+    {
+        "name": "Guardians of the Galaxy",
+        "year": 2014,
+        "duration": 121,
+        "genre": [
+            "action",
+            "comedy",
+            "sci-fi"
+        ],
+        "mood": "light",
+        "rating": 8,
+        "id": 21,
+        "poster": "images/guardians_galaxy.jpg"
+    },
+    {
+        "name": "Wonder Woman",
+        "year": 2017,
+        "duration": 141,
+        "genre": [
+            "action",
+            "fantasy"
+        ],
+        "mood": "exciting",
+        "rating": 7,
+        "id": 59,
+        "poster": "images/wonder_woman.jpg"
+    },
+    {
+        "name": "The Matrix",
+        "year": 1999,
+        "duration": 136,
+        "genre": [
+            "sci-fi",
+            "action"
+        ],
+        "mood": "exciting",
+        "rating": 8,
+        "id": 7,
+        "poster": "images/matrix.jpg"
+    }
+]

@@ -11,22 +11,22 @@ def home():
     return render_template("index.html")
 
 @app.route('/save_to_fav/<int:movie_id>', methods=["POST"])
-def add_to_fav():
-    data = request.get_json()
-    fav_movie = Movie(
-    name=data["name"],
-    year=int(data["year"]),
-    duration=int(data["duration"]),
-    genre=list(data["genre"]),
-    mood=data["mood"],
-    rating=int(data["rating"]),
-    id=int(data["id"]),
-    poster=data["poster"]
-)
+def add_to_fav(movie_id):
+
+    movies = load_movies()  # всі фільми
+    movie = next((m for m in movies if m.id == movie_id), None)
+
+    if not movie:
+        return jsonify({"error": "Movie not found"}), 404
+
     fav = load_fav()
-    fav.append(fav_movie)
-    save_to_fav(fav)  
-    return jsonify({"message": "ok", "id": fav_movie.id})
+
+    # щоб не було дублікатів
+    if not any(f.id == movie_id for f in fav):
+        fav.append(movie)
+        save_to_fav(fav)
+
+    return jsonify({"message": "ok", "id": movie_id})
 
 @app.route("/get_movies", methods=["GET"])
 def get_movies():
@@ -36,14 +36,14 @@ def get_movies():
 @app.route("/get_fav", methods=["GET"])
 def get_fav():
     favs = load_fav()
-    return jsonify([fav.__dict__ for fav in favs])
+    return jsonify([f.__dict__ for f in favs])
 
 @app.route("/delete_fav/<int:fav_id>", methods=["DELETE"])
 def delete_fav(fav_id):
     favs = load_fav()
-    favs = [f for f in favs if f.id != fav_id]  
-    save_to_fav(favs) 
-    return jsonify({"message": "fav deleted"})
+    favs = [f for f in favs if f.id != fav_id]
+    save_to_fav(favs)
+    return jsonify({"message": "deleted", "id": fav_id})
 
 if __name__ == "__main__":
     app.run(debug=True)

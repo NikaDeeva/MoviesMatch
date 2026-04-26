@@ -197,7 +197,7 @@ img {
   background-color: transparent;
   color: #360000;
 }
-.find .add__btn {
+.find .add__btn, .find .addToFavBtn {
   margin-top: 10px;
   border: 1px solid #360000;
   border-radius: 5px;
@@ -209,7 +209,7 @@ img {
   cursor: pointer;
   transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
-.find .add__btn:hover {
+.find .add__btn:hover, .find .addToFavBtn:hover {
   background-color: transparent;
   color: #360000;
 }
@@ -223,6 +223,30 @@ img {
   text-align: center;
   font-weight: 800;
   padding-bottom: 30px;
+}
+.fav__list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.fav .deleteFavBtn {
+  margin-top: 10px;
+  border: 1px solid #360000;
+  border-radius: 5px;
+  background-color: #360000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+}
+.fav .deleteFavBtn:hover {
+  background-color: transparent;
+  color: #360000;
 }
 
 .random {
